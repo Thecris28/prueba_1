@@ -1,32 +1,5 @@
 
 
   
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  main {
-    width: 70%;
-    margin-right: 2%;
-  }
-  
-  aside {
-    width: 28%;
-  }
-  
-  .productos {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .producto {
-    width: 48%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-  }
-  
-  .precio {
-    font-weight: bold;
-  }
+
   
