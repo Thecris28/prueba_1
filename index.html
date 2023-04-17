@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>fundacion</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="css/donaciones.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<header class="primary-header">
+			<nav class="navbar container">
+				<a href="" class="logo"><img src="img/pata-de-gato.png" alt="" width="25" height="25" ></a>
+				<a href="index.html" class="logo">PETS</a>
+				<ul class="nav-list">
+					<li>
+						<a href="index.html" class="nav-link">Inicio</a>
+					</li>
+					<li>
+						<a href="donaciones.html" class="nav-link">Donaciones</a>
+					</li>
+					<li>
+						<a href="nosotros.html" class="nav-link">Nosotros</a>
+					</li>
+					<li>
+						<a href="contacto.html" class="nav-link">Contacto</a>
+					</li>
+				</ul>
+				<a href="tienda.html" class="button">Tienda</a>
+				<a href="login.html" class="button">Iniciar Sesion</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<div class="swiper carousel">
+				<div class="swiper-wrapper">
+					<figure class="swiper-slide">
+						<a href="tienda.html"><img src="./img/3.jpg" alt="" /></a>
+						<figcaption class="swiper-description">
+							<h2>Tienda de accesorios para tu mascota</h2>
+							<p>
+								Busca y encuentra el accesorio ideal para tu mascota, contamos
+								con una variedad en accesorios para tu peludo amigo.
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="swiper-slide">
+						<img src="./img/GATO.png" alt="" />
+						<figcaption class="swiper-description">
+							<h2>Donaciones </h2>
+							<p>
+								con tu contribución puedes ayudar a proporcionar atención médica, alimentos, refugio y otros cuidados necesarios para los animales que han sufrido maltrato, abandono o están en situación de riesgo.
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="swiper-slide">
+						<img src="./img/2-6.webp" alt="" />
+						<figcaption class="swiper-description">
+							<h2>Quienes somos</h2>
+							<p>
+								todo empezo como un proyectosomos una pequeña tienda asociada a varias fundaciones sin fines de lucro, cada año hemos ido creciendo logrando llegar a mas personas.
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="swiper-slide">
+						<img src="./images/04.jpg" alt="" />
+						<figcaption class="swiper-description">
+							<h2>Contactate con nosotros</h2>
+							<p>
+								Contactate con notrotos para si tienes dudas o deceas cotizar un producto de notrostos.
+								Tambien puedes contactarnos para que tu fundacion pueda aparecer en nuestra seccion de fundaciones.
+							</p>
+						</figcaption>
+					</figure>
+				</div>
+				<button type="button" class="swiper-button-next"></button>
+				<button type="button" class="swiper-button-prev"></button>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- Swiper JS -->
+			<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+			<!-- Initialize Swiper -->
+			<script>
+				const swiper = new Swiper('.carousel', {
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					},
+					pagination: {
+						el: '.swiper-pagination'
+					}
+				})
+			</script>
+
+		</section>
+		<section class="demo-content">
+			<h2 class="formato">sobre la tienda</h2>
+			<p class="formato-texto">Nuestra página web de venta de accesorios de animales es un lugar donde los dueños de mascotas pueden encontrar una amplia variedad de productos para sus amigos peludos. Ofrecemos desde juguetes hasta comida especializada, pasando por productos de higiene, ropa y accesorios de todo tipo para perros, gatos y pequeñas mascotas. En nuestra página web los clientes pueden navegar por categorías, comparar precios y especificaciones de los productos. <br>
+				También ofrecemos información útil sobre el cuidado de las mascotas y recomendaciones de productos para diferentes necesidades. <br> Nuestro objetivo es proporcionar una experiencia de compra cómoda y confiable para nuestros clientes, asegurando la calidad y la satisfacción de los productos y ofreciendo una atención al cliente excepcional. Además, estamos comprometidos con la responsabilidad social, trabajando con proveedores éticos y apoyando a organizaciones benéficas dedicadas al bienestar animal.</p>
+				<h2 class="formato"> fundaciones a las que puedes ayudar</h2>	
+				<div class="container-c">
+					<div class="card">
+						<img src="img/img1.jpg">
+						<h3>Sociedad Protectora de Animales</h3>
+						<a href="#">Leer más</a>
+					</div>
+					
+					<div class="card">
+						<img src="img/img2.jpg">
+						<h3>Fundación Rescate Animal</h3>
+						<a href="#">Leer más</a>
+					</div>
+					
+					<div class="card">
+						<img src="img/img3.jpg">
+						<h3>Fundación Adopta</h3>
+						<a href="#">Leer más</a>
+					</div>
+		</section>
+
+		<section class="content2">
+			<h2 class="formato"> por siacaso</h2>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+			
+		</section>
+	
+		<script>
+			const isScrolling = () => {
+				const headerEl = document.querySelector('.primary-header')
+				let windowPosition = window.scrollY > 250
+				headerEl.classList.toggle('active', windowPosition)
+			}
+			window.addEventListener('scroll', isScrolling)
+		</script>
+	</body>
+</html>
