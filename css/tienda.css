@@ -1,4 +1,114 @@
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: ghostwhite;
+    padding-top: 80px;
+  }
+  
+  .sidebar {
+    font-family:'Open Sans', sans-serif; 
+    margin: 0;
+    width: 220px;
+    background-color: ghostwhite;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    padding: 20px 8px 1px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #1b1b1b;
+    display: block;
+  
+  
+  }
+   
+  .sidebar a.active {
+  
+    color: #4cdbc3;
+  }
+  
+  .sidebar a:hover:not(.active) {
+  
+    color: rgb(101, 101, 101);
+  }
+.content h2{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.content {
+    background-color: ghostwhite;
+    margin-left: 220px;
+    padding: 10px;
+    height: 3%;
+  }
+
+
+.container-items{
+    margin-left: 230px;
+    padding-right: 35px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3
+    , 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+} 
+
+
 
   
 

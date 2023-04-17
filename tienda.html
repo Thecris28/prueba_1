@@ -1,47 +1,260 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Título de la página</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
-    <link rel="stylesheet" href="css/tienda.css">
-  </head>
-  <body>
-    <header>
-      <!-- Aquí puedes incluir el logo y el menú de navegación -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tienda.css" />
+</head>
+<body>
+    <header class="primary-header">
+        <nav class="navbar container">
+            <a href="" class="logo"><img src="img/pata-de-gato.png" alt="" width="25" height="25" ></a>
+            <a href="index.html" class="logo">PETS</a>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="donaciones.html" class="nav-link">Donaciones</a>
+                </li>
+                <li>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <a href="tienda.html" class="button">Tienda</a>
+            <a href="login.html" class="button">Iniciar Sesion</a>
+        </nav>
     </header>
-    <div class="container">
-      <main>
-        <h1>Título principal</h1>
-        <div class="productos">
-          <div class="producto">
-            <img src="imagen-producto-1.jpg" alt="Descripción del producto">
-            <h2>Nombre del producto 1</h2>
-            <p>Descripción del producto 1</p>
-            <p class="precio">$X.XX</p>
-            <button>Agregar al carrito</button>
-          </div>
-          <div class="producto">
-            <img src="imagen-producto-2.jpg" alt="Descripción del producto">
-            <h2>Nombre del producto 2</h2>
-            <p>Descripción del producto 2</p>
-            <p class="precio">$X.XX</p>
-            <button>Agregar al carrito</button>
-          </div>
-          <!-- Puedes incluir más productos dentro de divs con la clase "producto" -->
+    <section class="demo-content">
+
+<div class="sidebar">
+  <a class="active" href="#correa">correas</a>
+  <a href="#bandanas">bandanas</a>
+  <a href="#identificaciones">identificaciones</a>
+  <a href="#comederos">comederos</a>
+  <a href="#"></a>
+</div>
+
+<div class="content">
+  <h2 id="correa">correas</h2>
+  </div>
+  <div class="container-items">
+    <div class="item">
+        <figure>
+            <img
+                src="img/correa 1.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Correa normal</h2>
+            <p class="price">$8.000</p>
+            <button>Añadir al carrito</button>
         </div>
-      </main>
-      <aside>
-        <h2>Categorías</h2>
-        <ul>
-          <li><a href="#">Categoría 1</a></li>
-          <li><a href="#">Categoría 2</a></li>
-          <li><a href="#">Categoría 3</a></li>
-          <li><a href="#">Categoría 4</a></li>
-        </ul>
-      </aside>
     </div>
-    <footer>
-      <!-- Aquí puedes incluir información de contacto y redes sociales -->
-    </footer>
-  </body>
+    <div class="item">
+        <figure>
+            <img
+                src="img/correa2.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Correa de Arrastre</h2>
+            <p class="price">$12.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/correa3.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Correa de Arrastre XL</h2>
+            <p class="price">$15.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/correa4.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Arnés H “Clásico”</h2>
+            <p class="price">$9.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/correa5.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Correa Antideslizante</h2>
+            <p class="price">$11.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+  
+<div class="content">
+  <h2 id="bandanas">bandanas</h2>
+  </div>
+
+  <div class="container-items">
+    <div class="item">
+        <figure>
+            <img
+                src="img/bandana1.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bandana - Purple Camouflage</h2>
+            <p class="price">$4.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/bandana2.png"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bandana - Hawaii</h2>
+            <p class="price">$4.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/bandanas3.webp"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bandana - Purple Camouflage</h2>
+            <p class="price">$4.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/bandana1.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bandana - Purple Camouflage</h2>
+            <p class="price">$4.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="img/bandana1.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bandana - Purple Camouflage</h2>
+            <p class="price">$4.990</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h2 id="identificaciones">identificadores</h2>
+    </div>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img
+                    src="img/identificadores1.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>identificador</h2>
+                <p class="price">$2.990</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img
+                src="img/identificadores1.webp"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>identificador</h2>
+                <p class="price">$2.990</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </div>        
+
+    <div class="content">
+        <h2 id="comederos">comederos</h2>
+        </div>
+        
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                        src="img/comedero1.webp"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Comedero automatico wi-fi</h2>
+                    <p class="price">$199.990</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img
+                    src="img/comedero2.webp"
+                        alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Comedero doble</h2>
+                    <p class="price">$4.990</p>
+                    <button>Añadir al carrito</button>
+                </div>
+            </div>
+        </div>        
+
+
+
+
+<script src="index.js"></script>
+  
+
+    </section>
+
+</body>
 </html>
+
